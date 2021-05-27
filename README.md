@@ -1,4 +1,3 @@
-<<<<<<<
 "#python codes"
 =======
 Praticed python codes
