@@ -1,16 +1,18 @@
+#Postgrsql code - connection, adding data to database, getting data from user
+
 import psycopg2
-"""conn = psycopg2.connect(dbname="postgres", user="postgres", password="1234", host="localhost", port="5432")   #for connecting to database in psql
+conn = psycopg2.connect(dbname="postgres", user="postgres", password="1234", host="localhost", port="5432")   #for connecting to database in psql
 
 cur = conn.cursor()
-#cur.execute('''create table student(Roll_no int, Name text, Address text, Age int, Phone_no bigint)''')
-#cur.execute('''insert into student values(1, 'Girish', 'Pune', 23, 8380898482)''')
-#cur.execute('''insert into student values(2, 'Jhon', 'Pune', 22, 123456789)''')
-#cur.execute('''insert into student values(3, 'Pratiksha', 'Mumbai', 23, 9874656789)''')
-#print("tabel created!!")
+cur.execute('''create table student(Roll_no int, Name text, Address text, Age int, Phone_no bigint)''')
+cur.execute('''insert into student values(1, 'Girish', 'Pune', 23, 8380898482)''')
+cur.execute('''insert into student values(2, 'Jhon', 'Pune', 22, 123456789)''')
+cur.execute('''insert into student values(3, 'Pratiksha', 'Mumbai', 23, 9874656789)''')
+print("tabel created!!")
 conn.commit()  #to commint changes
 conn.close()   #to close the connection
 
-print("Connection success!!")"""
+print("Connection success!!")
 
 def getdata():
     conn = psycopg2.connect(dbname="postgres", user="postgres", password="1234", host="localhost", port="5432")   #for connecting to database in psql
